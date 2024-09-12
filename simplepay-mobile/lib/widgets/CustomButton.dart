@@ -5,6 +5,7 @@ class CustomButton extends StatelessWidget {
   final bool isPrimary;
   final Function onPressed;
   final String text;
+  // final String color;
 
   const CustomButton({
     super.key,
@@ -13,6 +14,7 @@ class CustomButton extends StatelessWidget {
     required this.isPrimary,
     required this.onPressed,
     required this.text,
+    // required this.color,
   });
 
   @override
@@ -28,21 +30,26 @@ class CustomButton extends StatelessWidget {
                   color: Colors.black12,
                   blurRadius: 10,
                   spreadRadius: 2,
-                ),
+                )
               ]
             : [],
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color:
-              isPrimary ? Colors.transparent : Theme.of(context).primaryColor,
+          color: isPrimary
+              ? Colors.transparent
+              : Theme.of(context).secondaryHeaderColor,
         ),
       ),
       child: MaterialButton(
-        onPressed: () => onPressed(),
+        onPressed: onPressed(),
         child: Text(
           text,
           style: TextStyle(
-              color: isPrimary ? Colors.white : Theme.of(context).primaryColor),
+            color: isPrimary
+                ? Colors.white
+                : Theme.of(context).secondaryHeaderColor,
+            fontSize: 27,
+          ),
         ),
       ),
     );

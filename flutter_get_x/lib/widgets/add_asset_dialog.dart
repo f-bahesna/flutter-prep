@@ -20,8 +20,10 @@ class AddAssetDialogController extends GetxController {
     loading.value = true;
     HTTPService httpService = Get.find<HTTPService>();
     var responseData = await httpService.get("currencies");
+
     CurrenciesListAPIResponse currenciesListAPIResponse =
         CurrenciesListAPIResponse.fromJson(responseData);
+
     currenciesListAPIResponse.data?.forEach(
       (coin) {
         assets.add(
