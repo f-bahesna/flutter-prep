@@ -24,7 +24,7 @@ class CustomButton extends StatelessWidget {
         color: isPrimary ? Theme.of(context).primaryColor : Colors.transparent,
         boxShadow: isPrimary
             ? [
-                BoxShadow(
+                const BoxShadow(
                   color: Colors.black12,
                   blurRadius: 10,
                   spreadRadius: 2,

@@ -183,7 +183,7 @@ class WelcomePage extends StatelessWidget {
       padding: EdgeInsets.symmetric(
         horizontal: MediaQuery.sizeOf(context).width * 0.0,
       ),
-      child: Text(
+      child: const Text(
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         textAlign: TextAlign.center,
         style: TextStyle(
