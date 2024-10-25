@@ -83,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buttonWidget() {
     return Container(
       padding: EdgeInsets.all(10),
-      color: Color.fromARGB(66, 233, 323, 400),
+      color: Color.fromARGB(66, 28, 168, 223),
       child: GridView.builder(
         itemCount: buttonList.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

@@ -1,6 +1,17 @@
 import 'price_history_data.dart';
 import 'coin_data.dart';
 
+//NOTES:
+// There are 4 class :
+// 1. CurrenciesListAPIResponse
+//      This class will be received list of <CoinData>, Status and Meta. And have 2 function, which is:
+//       1. fromJson()
+//       2. toJson()
+// 2. PriceHistoryAPIResponse
+//    Will received PriceHistoryData, Status. and same have 2 function too, like fromJson() and toJson().
+// 3. Status
+// 4. Meta
+
 class CurrenciesListAPIResponse {
   List<CoinData>? data;
   Status? status;

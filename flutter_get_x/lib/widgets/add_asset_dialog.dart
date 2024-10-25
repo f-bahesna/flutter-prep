@@ -88,10 +88,11 @@ class AddAssetDialog extends StatelessWidget {
               items: controller.assets.map(
                 (asset) {
                   return DropdownMenuItem(
-                      value: asset,
-                      child: Text(
-                        asset,
-                      ));
+                    value: asset,
+                    child: Text(
+                      asset,
+                    ),
+                  );
                 },
               ).toList(),
               onChanged: (value) {
